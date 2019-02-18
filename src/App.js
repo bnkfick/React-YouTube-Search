@@ -6,9 +6,14 @@ import SearchBar from "./components/SearchBar";
 import Navbar from "./components/Navbar";
 import VideoDetail from "./components/VideoDetail";
 import { VideoList, VideoListItem } from "./components/VideoList";
-import { createGlobalStyle } from 'styled-components'
+import styled from "styled-components";
 
 
+const StyledContainer = styled(Container)`
+  animation-name: moveInUp ;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-out;
+`
 
 class App extends Component {
   state = {
@@ -40,7 +45,7 @@ class App extends Component {
       
       <Navbar></Navbar>
 
-      <Container>
+      <StyledContainer>
         <Row>
           <Col>
             <SearchBar searchYouTube={this.throttledSearch}/>
@@ -63,7 +68,7 @@ class App extends Component {
             </VideoList>
           </Col>
         </Row>
-      </Container>
+      </StyledContainer>
       </>
     );
   }

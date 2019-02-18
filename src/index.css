@@ -22,8 +22,6 @@ code {
 -----------------------------------------------------------------------------*/
 header {
   border-bottom: 1px solid #ccc;
-  /* background-color: #283646;
-  background-color: gold; */
 }
 
 .wrapper, .navbar {
@@ -32,15 +30,6 @@ header {
 }
 
 
-/* GRID
------------------------------------------------------------------------------*/
-#content{
-  margin: 0 auto;
-  text-align: center;
-  animation-name: moveInUp ;
-  animation-duration: 1500ms;
-  animation-timing-function: ease-out;
-}
 @keyframes moveInUp {
   0% {
       opacity: 0;
