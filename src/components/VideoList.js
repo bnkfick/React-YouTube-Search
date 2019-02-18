@@ -9,12 +9,13 @@ const List = styled.ul`
 const Item = styled.li`
    
     img {
-        border: ${props => props.active ? "3px solid coral":"3px solid pink"};
+
         width: 100%;
         margin: .75em auto;
         cursor: pointer;
         color: #495057;
-        border: 1px solid #ced4da;
+        /* border: 1px solid #ced4da; */
+        border: ${props => props.active ? "2px solid pink":"1px solid #ced4da"};
         border-radius: .25rem;
         transition: all .3s ease-in-out;
         :hover {
